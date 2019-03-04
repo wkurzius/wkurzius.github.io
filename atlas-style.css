@@ -1,3 +1,6 @@
+/* Restore space after paragraphs in announcement widget */
+.ui-widget.app.announcements div.ui-article p { margin: 0 0 0.5em; }
+
 #module-content-4704 > div, #module-content-4756 > div, #module-content-4757 > div  {
     padding: 0;
 }
