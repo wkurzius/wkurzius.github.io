@@ -217,6 +217,6 @@ special alerts */
 
 /* wellness committee */
 
-#wellness-committee-members { column-count: 2; margin-top: 5px;}
+#wellness-committee-members { column-count: 2; margin-top: 15px;}
 
 #wellness-committee-members p:first-child { margin: 0; }
