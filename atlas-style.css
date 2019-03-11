@@ -219,4 +219,4 @@ special alerts */
 
 #wellness-committee-members { column-count: 2; }
 
-#wellness-committee-members p:first-child { margin: 0; }
+#wellness-committee-members:first-child { margin: 0; }
