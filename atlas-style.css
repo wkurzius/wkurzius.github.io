@@ -214,3 +214,9 @@ special alerts */
 	transition: none !important;
 	animation: none !important;
 }
+
+/* wellness committee */
+
+#wellness-committee-members { column-count: 2; }
+
+#wellness-committee-members p:first-child { margin: 0; }
