@@ -18,7 +18,6 @@
 	#module-content-4704 .ui-widget-detail,
 	#module-content-4756 .ui-widget-detail,
 	#module-content-4757 .ui-widget-detail,
-	/*div.ui-widget.app this line added 181121 and might have to be removed */
     	{ padding: 0 !important; }
 
 	#module-content-365  .ui-articles > li { border: none }
