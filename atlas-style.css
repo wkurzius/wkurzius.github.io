@@ -1,5 +1,11 @@
-/* Restore space after paragraphs in announcement widget */
-.ui-widget.app.announcements div.ui-article p { margin: 0 0 0.5em; }
+/* ~~Restore space after paragraphs in announcement widget~~ removed 4/29/19 */
+/*.ui-widget.app.announcements div.ui-article p { margin: 0 0 0.5em; }*/
+
+/* restores paragraph spacing 4/29/19*/
+p { margin: 1em 0 !important; }
+
+/* eliminate padding after widgets 4/29/19 */
+div.ui-widget.app { padding: 0 !important }
 
 #module-content-4704 > div, #module-content-4756 > div, #module-content-4757 > div  {
     padding: 0;
@@ -177,11 +183,12 @@ special alerts */
 		display: table;
 	}
 
+	/* Removed 4/29/19 to reset p spacing but reduce article spacing
 	#module-content-4704 .ui-article p,
 	#module-content-4756 .ui-article p,
 	#module-content-4757 .ui-article p,
 	.front-page-alert p {
-		margin-bottom: 0.5em !important;
+		margin: 0.5em 0 !important;
 	}
 
 	#module-content-4704 .ui-article p:last-of-type,
@@ -189,7 +196,7 @@ special alerts */
 	#module-content-4757 .ui-article p:last-of-type,
 	.front-page-alert p:last-of-type {
 		margin-bottom: 0 !important;
-	}
+	} end 4/29 remove */
 
 	#module-content-4704 .ui-article-description, 
 	#module-content-4756 .ui-article-description,
@@ -222,3 +229,5 @@ special alerts */
 #wellness-committee-members { column-count: 2; margin-top: 15px;}
 
 #wellness-committee-members p:first-child { margin: 0; }
+
+div.ui-article { padding: 0 !important; }
