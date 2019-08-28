@@ -222,3 +222,7 @@ special alerts */
 #wellness-committee-members { column-count: 2; margin-top: 15px;}
 
 #wellness-committee-members p:first-child { margin: 0; }
+
+/* INSIGHT channel link */
+
+li#navc-2067 a { color: #efd817; }
