@@ -224,5 +224,7 @@ special alerts */
 #wellness-committee-members p:first-child { margin: 0; }
 
 /* INSIGHT channel link */
-
 #navc-2067 a { color: #efd817 !important; }
+
+/* Remove border after lists because of poor CSS by Blackboard (inline? really??) */
+.ui-articles > li { border: none !important; }
