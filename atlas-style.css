@@ -225,3 +225,10 @@ special alerts */
 
 /* INSIGHT channel link */
 #navc-2067 a { color: #efd817 !important; }
+
+/* Roosevelt staff list*/
+#roosevelt-staff p {
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
+}
