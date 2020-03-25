@@ -15,10 +15,7 @@
 	#module-content-8663 .ui-article,
 	#module-content-365 .ui-article,
 	
-	#module-content-4704 .ui-widget-detail,
-	#module-content-4756 .ui-widget-detail,
-	#module-content-4757 .ui-widget-detail,
-    	{ padding: 0 !important; }
+
 
 	.flexpage p { padding: 0 !important; }
 
@@ -136,6 +133,16 @@
 /************** red yellow blue alerts **************/
 /*
 special alerts */
+
+	#module-content-4704 .ui-widget-detail,
+	#module-content-4756 .ui-widget-detail,
+	#module-content-4757 .ui-widget-detail,
+	#module-content-8600 .ui-widget-detail,
+	#module-content-8564 .ui-widget-detail,
+	#module-content-11890 .ui-widget-detail,
+	#module-content-4435 .ui-widget-detail
+		{ padding: 0 !important; }
+
 	#module-content-4704 .ui-article,
 	#module-content-8600 .ui-article,
 	#module-content-8564 .ui-article,
