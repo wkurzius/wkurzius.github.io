@@ -136,7 +136,12 @@
 /************** red yellow blue alerts **************/
 /*
 special alerts */
-	#module-content-4704 .ui-article, .front-page-alert.red-alert {
+	#module-content-4704 .ui-article,
+	#module-content-8600 .ui-article,
+	#module-content-8564 .ui-article,
+	#module-content-11890 .ui-article,
+	#module-content-4435 .ui-article,
+	.front-page-alert.red-alert {
 		background:
 			url('https://www.manvilleschools.org/cms/lib07/NJ01912793/Centricity/domain/4/icons/red-alert.png')
 			no-repeat scroll 5px center #f08a8a;
@@ -160,6 +165,10 @@ special alerts */
 	#module-content-4704 .ui-article, 
 	#module-content-4756 .ui-article,
 	#module-content-4757 .ui-article,
+	#module-content-8600 .ui-article,
+	#module-content-8564 .ui-article,
+	#module-content-11890 .ui-article,
+	#module-content-4435 .ui-article,
 	.front-page-alert {
 		box-sizing: border-box;
 		-moz-box-sizing: border-box;
@@ -180,6 +189,10 @@ special alerts */
 	#module-content-4704 .ui-article p,
 	#module-content-4756 .ui-article p,
 	#module-content-4757 .ui-article p,
+	#module-content-8600 .ui-article p,
+	#module-content-8564 .ui-article p,
+	#module-content-11890 .ui-article p,
+	#module-content-4435 .ui-article p,
 	.front-page-alert p {
 		margin-bottom: 0.5em !important;
 	}
@@ -187,6 +200,10 @@ special alerts */
 	#module-content-4704 .ui-article p:last-of-type,
 	#module-content-4756 .ui-article p:last-of-type,
 	#module-content-4757 .ui-article p:last-of-type,
+	#module-content-8600 .ui-article p:last-of-type,
+	#module-content-8564 .ui-article p:last-of-type,
+	#module-content-11890 .ui-article p:last-of-type,
+	#module-content-4435 .ui-article p:last-of-type,
 	.front-page-alert p:last-of-type {
 		margin-bottom: 0 !important;
 	}
@@ -194,15 +211,23 @@ special alerts */
 	#module-content-4704 .ui-article-description, 
 	#module-content-4756 .ui-article-description,
 	#module-content-4757 .ui-article-description,
+	#module-content-8600 .ui-article-description,
+	#module-content-8564 .ui-article-description,
+	#module-content-11890 .ui-article-description,
+	#module-content-4435 .ui-article-description,
 	.front-page-alert div {
 		display: table-cell;
 		vertical-align: middle;
 	}
 
-#module-content-4704 .ui-article p:before, 
-#module-content-4756 .ui-article p:before,
-#module-content-4757 .ui-article p:before
-{	content: none; }
+	#module-content-4704 .ui-article p:before, 
+	#module-content-4756 .ui-article p:before,
+	#module-content-4757 .ui-article p:before,
+	#module-content-8600 .ui-article p:before,
+	#module-content-8564 .ui-article p:before,
+	#module-content-11890 .ui-article p:before,
+	#module-content-4435 .ui-article p:before,
+	{	content: none; }
 
 
 /*disable channel links (schoolwires borked this) */
