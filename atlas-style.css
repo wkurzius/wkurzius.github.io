@@ -213,6 +213,18 @@ special alerts */
 		margin-bottom: 0.5em !important;
 	}
 
+
+	#module-content-4704 .ui-article > li,
+	#module-content-4756 .ui-article > li,
+	#module-content-4757 .ui-article > li,
+	#module-content-8600 .ui-article > li,
+	#module-content-8564 .ui-article > li,
+	#module-content-11890 .ui-article > li,
+	#module-content-4435 .ui-article > li,
+	.front-page-alert p {
+		border: none !important;
+	}
+
 	#module-content-4704 .ui-article p:last-of-type,
 	#module-content-4756 .ui-article p:last-of-type,
 	#module-content-4757 .ui-article p:last-of-type,
