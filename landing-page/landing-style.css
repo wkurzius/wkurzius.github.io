@@ -1,10 +1,35 @@
-#nav-bar {
-	position: fixed;
-	top: 0;
+#header {
+	position: sticky;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
-main {
+#header, main {
+	width: 50rem;
+	margin: auto;
+}
+
+#logo {
+	flex-grow: 1;
+}
+
+#logo img {
+	height: 3rem;
+}
+
+#features {
 	display: flex;
+	justify-content: space-between;
+}
+
+#features .feature {
+	width: 30%;
+}
+
+#video {
+	display: block;
+	margin: auto;
 }
 
 @media (max-width: 600px) {
