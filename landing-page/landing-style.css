@@ -50,6 +50,7 @@ main {
 #features .feature {
 	width: 30%;
 	border: 1px solid black;
+	gap: 1rem;
 }
 
 #features h3 {
@@ -78,7 +79,7 @@ main {
 }
 
 #home p {
-	width: 40rem;
+	max-width: 40rem;
 	margin: auto auto 3rem;
 	line-height: 1.3rem;
 	font-size: 16px;
