@@ -1,5 +1,5 @@
-/* External links */
-#sp-content a[href^="https://"]:not([href*="manvilleschools.org"]):after {
+/* External links (abandoned, can't keep track of the number of xx-content pages schoolwires insists on using) */
+/*#sp-content a[href^="https://"]:not([href*="manvilleschools.org"]):after {
 	display: inline-block;
 	font-style: normal;
  	font-variant: normal;
@@ -10,7 +10,7 @@
 	content: "\f360";
 	margin-left: 0.15em;
 	scale: 0.75;
-}
+}*/
 
 
 /* Restore space after paragraphs in announcement widget */
