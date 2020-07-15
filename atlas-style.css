@@ -71,10 +71,7 @@
 
 /********************* faculty web links ****************/
 	#staff-resources {
-		-webkit-columns: 2 410px;
-		-moz-columns: 2 410px;
-				columns: 2 410px;
-		
+		columns: 2 410px;		
 		text-align: center;
 	}
 
