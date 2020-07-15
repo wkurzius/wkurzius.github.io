@@ -1,3 +1,8 @@
+/* External links */
+a[rel="external"]:after {
+  color: red;
+}
+
 /* Restore space after paragraphs in announcement widget */
 .ui-widget.app.announcements div.ui-article p { margin: 0 0 0.5em; }
 
