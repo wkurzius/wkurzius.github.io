@@ -1,5 +1,5 @@
 /* External links */
-a[rel="external"]:after {
+a[rel="external"] {
   color: red;
 }
 
