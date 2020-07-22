@@ -286,13 +286,14 @@ special alerts */
 /* INSIGHT channel link */
 #navc-2067 a { color: #efd817 !important; }
 
-/* Roosevelt staff list*/
-#roosevelt-staff p {
+/* School Faculty Column Lists */
+
+div.school-faculty-columns p {
 	-webkit-column-break-inside: avoid;
 	page-break-inside: avoid;
 	break-inside: avoid;
 }
 
-#roosevelt-staff p:first-child {
+div.school-faculty-columns p:first-child {
 	margin-top: 0
 }
