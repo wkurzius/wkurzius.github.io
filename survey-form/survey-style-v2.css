@@ -2,6 +2,7 @@
 body {
 	background-color: #D9B166;
 	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+	font-weight: 200;
 }
 
 main {
@@ -11,6 +12,7 @@ main {
 
 #title, #description {
 	text-align: center;
+	font-weight: 400;
 }
 
 label {
@@ -19,15 +21,14 @@ label {
 
 label.directions {
 	margin-bottom: 0.5rem;
-	font-weight: bold;
 }
 
 form > div {
 	margin: 1rem 0;
 	padding: 1rem;
 	background-color: #A0D9D9;
-	box-shadow:  0 0 .5rem rgba(0, 0, 0, 0.5);
-	transition: box-shadow 0.1s ease-in-out;
+	box-shadow: none;
+	transition: box-shadow 0.25s ease-in-out;
 }
 
 main div:hover {
@@ -36,7 +37,6 @@ main div:hover {
 
 input {
 	padding: 0.5rem;
-	
 }
 
 input:focus, textarea:focus {
@@ -68,7 +68,7 @@ textarea {
 	border: none;
 	background-color: #A62D2D;
 	color: white;
-	font-weight: bold;
+
 	transition: background-color .4s ease-in-out;
 }
 
