@@ -46,6 +46,7 @@ input:focus, textarea:focus {
 
 #name, #email {
 	width: 100%;
+	box-sizing: border-box;
 }
 
 #number {
@@ -60,6 +61,7 @@ select {
 textarea {
 	width: 100%;
 	padding: 0.5rem;
+	box-sizing: border-box;
 }
 
 #submit {
