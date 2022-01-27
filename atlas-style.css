@@ -145,7 +145,8 @@ special alerts */
 	#module-content-8600 > div,
 	#module-content-8564 > div,
 	#module-content-11890 > div,
-	#module-content-4435 > div
+	#module-content-4435 > div,
+	#module-content-13529 > div
 	{
 		padding: 0;
 	}
@@ -156,7 +157,8 @@ special alerts */
 	#module-content-8600 .ui-widget-detail,
 	#module-content-8564 .ui-widget-detail,
 	#module-content-11890 .ui-widget-detail,
-	#module-content-4435 .ui-widget-detail
+	#module-content-4435 .ui-widget-detail,
+	#module-content-13529 .ui-widget-detail
 		{ padding: 0 !important; }
 
 	#module-content-4704 .ui-article,
@@ -178,7 +180,9 @@ special alerts */
 		color: #4A4A00;
 	}
 
-	#module-content-4757 .ui-article,.front-page-alert.blue-alert {
+	#module-content-4757 .ui-article,
+	#module-content-13529 .ui-article,
+	.front-page-alert.blue-alert {
 		background:
 			url('https://www.manvilleschools.org/cms/lib07/NJ01912793/Centricity/domain/4/icons/info.png')
 			no-repeat scroll 5px center #e3e2f0;
