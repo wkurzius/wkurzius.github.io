@@ -134,8 +134,9 @@
 
 	}
 
-
+/**********************************************************/
 /************** BEGIN red yellow blue alerts **************/
+/**********************************************************/
 
 	#module-content-4704 > div,
 	#module-content-4756 > div,
@@ -272,8 +273,9 @@
 	#module-content-13529 .ui-article p:before
 	{	content: none; }
 
+/********************************************************/
 /************** END red yellow blue alerts **************/
-
+/********************************************************/
 
 /*disable channel links (schoolwires borked this) */
 	/*li.sw-channel-item a:not(:only-child) { pointer-events: none; }*/
