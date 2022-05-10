@@ -5,10 +5,7 @@
     background-color: #ffebcd;
 }
 
-img {
-    display: block;
-    margin: auto;
-}
+
 
 h1 {
     text-align: center;
@@ -19,15 +16,22 @@ h1 {
 h2 {
     border-top: 1px solid #9C86B3;
     padding-top: 1rem;
+    font-variant: small-caps;
 }
 
-#wiki-link {
-    font-style: italic;
-    text-align: center;
+a {
+    text-decoration: none;
 }
 
-cite {
+img {
     display: block;
-    margin-left: 2rem;
-    margin-top: 0.25rem;
+    margin: auto;
+}
+
+ul {
+    list-style-type: "\25CA";
+}
+
+li {
+    padding-left: 0.1rem;
 }
