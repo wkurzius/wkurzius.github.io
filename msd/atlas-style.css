@@ -1,3 +1,7 @@
+#pmi-13389 {
+	display: none;
+}
+
 /* External links (abandoned, can't keep track of the number of xx-content pages schoolwires insists on using) */
 /*#sp-content a[href^="https://"]:not([href*="manvilleschools.org"]):after {
 	display: inline-block;
