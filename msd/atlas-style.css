@@ -1,3 +1,11 @@
+/* hide search for board memebers */
+#module-content-13654 > div > div > div.floatleft,
+#module-content-13654 > div > div > div.floatright {
+	display: none;
+}
+
+
+/* for hising new headlines until ready*/
 #pmi-13389 {
 	display: none;
 }
