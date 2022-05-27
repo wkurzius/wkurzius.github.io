@@ -1,0 +1,13 @@
+<p id="timer"></p>
+
+<script>
+    var f = setInterval(function () {
+
+        var t1 = Date.now();
+        var t2 = new Date('June 16, 2022 12:50:00');
+        var dif = Math.floor((t2 - t1)/1000);
+        var bin = dif.toString(2)
+
+        document.getElementById("timer").innerHTML = bin
+    }, 1);
+</script>
