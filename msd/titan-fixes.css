@@ -13,6 +13,6 @@
 	padding: 20px 0 !important;
 }
 
-.ui-widget.app:not(.flexpage):not(.announcements):not(.upcomingevents) div.ui-article:last-child {
+.ui-widget.app:not(.flexpage):not(.announcements):not(.upcomingevents) li:last-child div.ui-article {
 	border-bottom: none;
 }
