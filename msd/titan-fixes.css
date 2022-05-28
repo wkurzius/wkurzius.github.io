@@ -1,4 +1,5 @@
 /* hide that awful red border that appears around links */
+
 :focus {
 	outline: none !important;
 	transition: none !important;
