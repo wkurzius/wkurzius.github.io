@@ -5,3 +5,13 @@
 	transition: none !important;
 	animation: none !important;
 }
+
+/* borders between headlines */
+
+.ui-widget.app:not(.flexpage):not(.announcements):not(.upcomingevents) div.ui-article {
+	border-bottom: 1px solid #ccc;
+}
+
+.ui-widget.app:not(.flexpage):not(.announcements):not(.upcomingevents) div.ui-article:last-child {
+	border-bottom: none;
+}
