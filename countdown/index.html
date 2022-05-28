@@ -1,13 +1,34 @@
-<p id="timer"></p>
+<!DOCTYPE html>
+<html lang="en">
 
-<script>
-    var f = setInterval(function () {
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        var t1 = Date.now();
-        var t2 = new Date('June 16, 2022 12:50:00');
-        var dif = Math.floor((t2 - t1)/1000);
-        var bin = dif.toString(2)
+<body>
+    <div id="container">
+        <div id="timer" title="Number of seconds, in binary, until the end of the year."></div>
+    </div>
 
-        document.getElementById("timer").innerHTML = bin
-    }, 1);
-</script>
+    <script>
+        const f = setInterval(function () {
+
+            const t1 = Date.now();
+            const t2 = new Date('June 16, 2022 12:50:00');
+            const dif = Math.floor((t2 - t1) / 1000);
+            const bin = dif.toString(2);
+
+            //const l = bin.length;
+            //const p = 8 * (Math.floor(l / 8) + 1);
+            const pad = bin.padStart(24, '0');
+
+            document.getElementById("timer").innerHTML = pad;
+        }, 100);
+    </script>
+</body>
+
+</html>
