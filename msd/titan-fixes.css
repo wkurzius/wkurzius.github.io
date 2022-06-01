@@ -1,51 +1,67 @@
 /* hide that awful red border that appears around links */
 :focus {
-	outline: none !important;
-	transition: none !important;
-	animation: none !important;
+  outline: none !important;
+  transition: none !important;
+  animation: none !important;
 }
 
 /* borders between headlines */
-.ui-widget.app:not(.flexpage):not(.announcements):not(.upcomingevents) div.ui-article {
-	border-bottom: 1px solid #ccc;
-	padding: 20px 0 !important;
+.ui-widget.app:not(.flexpage):not(.announcements):not(.upcomingevents)
+  div.ui-article {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0 !important;
 }
 
-.ui-widget.app:not(.flexpage):not(.announcements):not(.upcomingevents) li:last-child div.ui-article {
-	border-bottom: none;
+.ui-widget.app:not(.flexpage):not(.announcements):not(.upcomingevents)
+  li:last-child
+  div.ui-article {
+  border-bottom: none;
 }
 
 /* end of loop for upcoming events */
 .ui-widget.app.upcomingevents .cs-article-slider li[data-index="7"] {
-	border-right: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 /* dates now same width for consistent wrapping */
 /* still an issue when months are different */
 .ui-article-title.sw-calendar-block-date .joel-date {
-	width: 60px;
+  width: 60px;
 }
 
 /* faculty web links  */
 #staff-resources {
-	columns: 2 410px;		
-	text-align: center;
+  columns: 2 410px;
+  text-align: center;
 }
 
 #staff-resources p {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 #staff-resources img {
-	box-shadow: 0 0 5px #888;
-	border: 0;
-	max-width: 100%;
-	height: auto;
+  box-shadow: 0 0 5px #888;
+  border: 0;
+  max-width: 100%;
+  height: auto;
 }
 
-#staff-resources img:hover { box-shadow: 0 0 8px #888; }
+#staff-resources img:hover {
+  box-shadow: 0 0 8px #888;
+}
 
 /* remove extra lines between files in file library */
 .file-library .ui-widget-detail li {
-	border-bottom: none;
+  border-bottom: none;
+}
+
+/* remove search bar for board members and last divider */
+#sw-module-136540 .ui-widget-detail.searchdiv.directory-filter > :not(.staff) {
+  display: none;
+}
+
+#sw-module-136540
+  .ui-widget-detail.searchdiv.directory-filter
+  > div:last-child {
+  border-bottom: none;
 }
