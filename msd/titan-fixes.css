@@ -44,3 +44,8 @@
 }
 
 #staff-resources img:hover { box-shadow: 0 0 8px #888; }
+
+/* remove extra lines between files in file library */
+.file-library .ui-widget-detail li {
+	border-bottom: none;
+}
