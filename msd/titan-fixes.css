@@ -65,3 +65,9 @@
   > div:last-child {
   border-bottom: none;
 }
+
+/* remove ridiculously large margin-bottom from heading app */
+/* this will possibly break other things */
+[data-region="sp2"] .ui-widget.app {
+  margin-bottom: 0;
+}
