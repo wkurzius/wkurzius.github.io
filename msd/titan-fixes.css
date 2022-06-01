@@ -19,3 +19,9 @@
 .ui-widget.app.upcomingevents .cs-article-slider li[data-index="7"] {
 	border-right: 1px solid #ccc;
 }
+
+/* dates now same width for consistent wrapping */
+/* still an issue when months are different */
+.ui-article-title.sw-calendar-block-date .joel-date {
+	width: 60px;
+}
