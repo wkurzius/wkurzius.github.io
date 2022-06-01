@@ -25,3 +25,22 @@
 .ui-article-title.sw-calendar-block-date .joel-date {
 	width: 60px;
 }
+
+/* faculty web links  */
+#staff-resources {
+	columns: 2 410px;		
+	text-align: center;
+}
+
+#staff-resources p {
+	margin-top: 0;
+}
+
+#staff-resources img {
+	box-shadow: 0 0 5px #888;
+	border: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+#staff-resources img:hover { box-shadow: 0 0 8px #888; }
