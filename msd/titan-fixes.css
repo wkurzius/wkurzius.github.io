@@ -19,10 +19,12 @@
 }
 
 /* end of loop for upcoming events */
-/*broken*/
-/*.ui-widget.app.upcomingevents .cs-article-slider li[data-index="7"] {
-  border-right: 1px solid #ccc;
-}*/
+.ui-widget.app.upcomingevents .cs-article-slider li[data-index="0"] {
+  border-left: 1px solid #ccc;
+}
+.ui-widget.app.upcomingevents .cs-article-slider li:first-child {
+  border-left: none;
+}
 
 /* dates now same width for consistent wrapping */
 /* still an issue when months are different */
