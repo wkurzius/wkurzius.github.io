@@ -6,11 +6,12 @@
 }
 
 /* borders between headlines */
-.ui-widget.app:not(.flexpage):not(.announcements):not(.upcomingevents)
+/* breaks slider version */
+/*.ui-widget.app:not(.flexpage):not(.announcements):not(.upcomingevents)
   div.ui-article {
   border-bottom: 1px solid #ccc;
   padding: 20px 0 !important;
-}
+}*/
 
 .ui-widget.app:not(.flexpage):not(.announcements):not(.upcomingevents)
   li:last-child
