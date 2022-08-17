@@ -84,3 +84,9 @@ a.ui-btn-toolbar span {
   padding: 0.25rem 0.5rem;
   height: auto
 }
+
+/* fix teacher site directory poor positioning */
+.sw-directory-alphabetical-filter-link {
+  float: none;
+  display: inline;
+}
