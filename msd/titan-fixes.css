@@ -102,3 +102,14 @@ This is absurd.
 div[aria-label="Jamil Maroun"] li.staffname::before {
   content: "Dr. ";
 }
+
+/* mhs yearbooks */
+div#mhs-yearbooks-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div#mhs-yearbooks-flex-container figure {
+  flex: 200px 1 1;
+  text-align: center;
+}
