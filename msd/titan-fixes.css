@@ -113,3 +113,8 @@ div#mhs-yearbooks-flex-container figure {
   flex: 200px 1 1;
   text-align: center;
 }
+
+div#mhs-yearbooks-flex-container figure a {
+  font-weight: normal;
+  color: inherit
+}
