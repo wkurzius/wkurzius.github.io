@@ -145,7 +145,11 @@ div#mhs-yearbooks-flex-container figure a {
   color: white;
 }
 
-/* limit number of days to 6 */
+/* limit number of days to 6  and allow more than one event to show */
 .ui-widget.app.google-events .ui-articles > li:nth-child(n+7){
   display: none;
+}
+
+[data-limit-events="true"] .ui-widget.app.upcomingevents .upcoming-column.right .ui-article-description:nth-child(n+3), [data-limit-events="true"] .ui-widget.app.google-events .cs-events-right .ui-article-description:nth-child(n+3) {
+  display:initial
 }
