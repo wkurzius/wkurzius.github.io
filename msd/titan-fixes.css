@@ -145,11 +145,15 @@ div#mhs-yearbooks-flex-container figure a {
   color: white;
 }
 
-/* limit number of days to 6  and allow more than one event to show */
+/* Google Event fixes: limit number of days to 6, allow more than one event to show and add some padding*/
 .ui-widget.app.google-events .ui-articles > li:nth-child(n+7){
   display: none;
 }
 
 [data-limit-events="true"] .ui-widget.app.upcomingevents .upcoming-column.right .ui-article-description:nth-child(n+3), [data-limit-events="true"] .ui-widget.app.google-events .cs-events-right .ui-article-description:nth-child(n+3) {
   display:initial
+}
+
+#pmi-14027 .ui-widget.app.google-events .ui-widget-detail {
+  padding: 0 20px;
 }
