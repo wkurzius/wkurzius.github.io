@@ -144,3 +144,8 @@ div#mhs-yearbooks-flex-container figure a {
   background: #3867FF;
   color: white;
 }
+
+/* limit number of days to 6 */
+.ui-widget.app.google-events .ui-articles > li:nth-child(n+7){
+  display: none;
+}
