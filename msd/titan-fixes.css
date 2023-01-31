@@ -157,3 +157,9 @@ div#mhs-yearbooks-flex-container figure a {
 #pmi-14027 .ui-widget.app.google-events .ui-widget-detail {
   padding: 0 20px;
 }
+
+/*community updates on main page*/
+#module-content-14248 ul.site-shortcuts ul {
+	display: grid !important;
+	grid: auto-flow / 33% 33% auto;
+}
