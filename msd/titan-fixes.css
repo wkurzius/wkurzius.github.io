@@ -163,3 +163,8 @@ div#mhs-yearbooks-flex-container figure a {
 	display: grid !important;
 	grid: auto-flow / 33% 33% auto;
 }
+
+/*hide beta*/
+#gb-header div.cs-dropdown ul.cs-dropdown-list li:nth-child(5) {
+  display:none;
+} 
