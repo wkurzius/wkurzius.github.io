@@ -171,5 +171,5 @@ div#mhs-yearbooks-flex-container figure a {
 
 /* mmg gallery width fix*/
 .mmg-container .mmg-slide img {
-  width: auto;
+  width: auto !important;
 }
