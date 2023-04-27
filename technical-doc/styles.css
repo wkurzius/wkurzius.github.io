@@ -19,9 +19,13 @@
   
   #navbar header {
     background-color: #15B097;
-    font-size: xx-large;
+    font-size: large;
     font-weight: bold;
     padding: 1rem;
+  }
+
+  h1 {
+    margin: 0;
   }
   
   #navbar-links {
@@ -47,12 +51,16 @@
   }
   
   #main-doc header {
-    font-size: x-large;
+    /*font-size: x-large;*/
     font-weight: bold;
     margin-top: 2rem;
   }
   
   #main-doc section:first-child header {
+    margin-top: inherit;
+  }
+
+  #main-doc section:first-child h2 {
     margin-top: inherit;
   }
   

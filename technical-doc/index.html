@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <title>Technical Documentation Page</title>
   <link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
 
 <body>
   <nav id="navbar">
-    <header>Technical Documentation</header>
+    <header><h1>Technical Documentation</h1></header>
     <div id="navbar-links">
       <a class="nav-link" href="#section_1">Section 1</a>
       <a class="nav-link" href="#section_2">Section 2</a>
@@ -21,7 +22,7 @@
   </nav>
   <main id="main-doc">
     <section class="main-section" id="section_1">
-      <header>Section 1</header>
+      <header><h2>Section 1</h2></header>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu aliquet libero. Sed eget metus dolor. Duis
         dapibus auctor dignissim. Vestibulum sed nisl ligula. Nulla facilisi. Nunc iaculis fringilla lectus vel
         venenatis. Mauris a orci id dui ultricies auctor. Quisque a cursus velit. Curabitur fermentum felis pharetra
@@ -45,7 +46,7 @@
       <code>struct group_info init_groups = { .usage = ATOMIC_INIT(2) };</code>
     </section>
     <section class="main-section" id="section_2">
-      <header>Section 2</header>
+      <header><h2>Section 2</h2></header>
       <p>Aliquam sit amet dolor non erat pretium dapibus vitae vitae mi. Mauris fringilla rhoncus sapien sit amet
         bibendum. Curabitur placerat ipsum sagittis sapien interdum, at dapibus tortor viverra. Aliquam suscipit
         bibendum erat, quis bibendum dolor lacinia euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -60,7 +61,7 @@
       <code>nblocks = (gidsetsize + NGROUPS_PER_BLOCK - 1) / NGROUPS_PER_BLOCK; </code>
     </section>
     <section class="main-section" id="section_3">
-      <header>Section 3</header>
+      <header><h2>Section 3</h2></header>
       <p>Pellentesque pretium leo id eros viverra egestas. Duis fringilla, turpis at mollis dapibus, dui purus accumsan
         odio, et facilisis sem leo non ante. Cras consequat, tellus quis fringilla consectetur, tortor ligula euismod
         mi, in vestibulum dui urna non diam. Sed a justo ante. Quisque rhoncus imperdiet rutrum. Nam iaculis urna quam,
@@ -78,7 +79,7 @@
       <code>group_info = kmalloc(sizeof(*group_info) + nblocks*sizeof(gid_t *), GFP_USER); </code>
     </section>
     <section class="main-section" id="section_4">
-      <header>Section 4</header>
+      <header><h2>Section 4</h2></header>
       <p>Etiam non condimentum metus, nec commodo est. In faucibus fermentum consequat. Lorem ipsum dolor sit amet,
         consectetur adipiscing elit. Nulla venenatis sit amet eros ac dapibus. Ut nec erat neque. Sed sagittis metus
         nisl, vitae elementum orci posuere eu. Quisque eget ex quis quam semper fringilla. Maecenas vehicula elit ac
@@ -92,7 +93,7 @@
       <code>free_page((unsigned long)group_info->blocks[i]); </code>
     </section>
     <section class="main-section" id="section_5">
-      <header>Section 5</header>
+      <header><h2>Section 5</h2></header>
       <p>Pellentesque sed scelerisque tellus, vitae tincidunt enim. In hac habitasse platea dictumst. Duis tempus urna
         tincidunt nisi malesuada commodo. Quisque vel tellus tincidunt, feugiat orci quis, viverra urna. Mauris mollis
         dictum augue. Quisque tristique, leo nec suscipit consectetur, mauris mauris condimentum libero, eu iaculis urna
