@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    padding: 1rem;
+    word-spacing: 1rem;
+    text-transform: lowercase;
+}
+
+#navbar a {
+    /*text-decoration: none;*/
+    color: black;
+}
+
+h1,
+h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#welcome-section {
+    height: 100vh;
+    padding: 3rem 1rem 1rem 1rem;
+}
+
+#projects {
+    height: 100vh;
+    padding: 3rem 1rem 1rem 1rem;
+}
+
+#projects a {
+    text-decoration: none;
+    color: hsl(0 43% 47%);
+}
+
+#projects a:hover {
+    color: hsl(180 43% 47%);
+}
+
+@media (max-width: 217px) {
+    #welcome-section {
+        padding: 3.5rem 1rem 1rem 1rem;
+    }
+
+    #projects {
+        padding: 3.5rem 1rem 1rem 1rem;
+    }
+}
