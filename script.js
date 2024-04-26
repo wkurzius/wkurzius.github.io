@@ -1,6 +1,5 @@
-var end = Date.now() + (15 * 1000);
+var end = Date.now() + (1 * 1000);
 
-// go Buckeyes!
 var colors = ['#0000bb', '#ffff00'];
 
 (function frame() {
