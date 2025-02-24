@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header><h1>Technical Documentation</h1></header>
+    <div id="navbar-links">
+      <a class="nav-link" href="#section_1">Section 1</a>
+      <a class="nav-link" href="#section_2">Section 2</a>
+      <a class="nav-link" href="#section_3">Section 3</a>
+      <a class="nav-link" href="#section_4">Section 4</a>
+      <a class="nav-link" href="#section_5">Section 5</a>
+    </div>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="section_1">
+      <header><h2>Section 1</h2></header>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu aliquet libero. Sed eget metus dolor. Duis
+        dapibus auctor dignissim. Vestibulum sed nisl ligula. Nulla facilisi. Nunc iaculis fringilla lectus vel
+        venenatis. Mauris a orci id dui ultricies auctor. Quisque a cursus velit. Curabitur fermentum felis pharetra
+        facilisis imperdiet. Vestibulum venenatis justo ac interdum iaculis. Integer id dolor mollis, eleifend libero
+        vel, semper nibh. </p>
+      <p>Aliquam nibh tellus, tempor vel nibh a, volutpat rutrum enim. Quisque vehicula viverra eros, et lobortis dui
+        consectetur at. Praesent sit amet lorem sed leo mattis fringilla. Integer lobortis libero mauris, et dictum quam
+        molestie nec. Duis ornare a velit id imperdiet. Proin laoreet lacus ut nunc lacinia, venenatis vestibulum erat
+        vulputate. Sed lobortis ante vitae diam condimentum, eu eleifend augue porta. Nullam elit dui, ultrices vitae
+        ante vel, semper molestie purus. Suspendisse ac sapien vehicula, consequat ipsum dictum, molestie tortor.
+        Aliquam eu ipsum ac mi dapibus aliquet. Ut sed purus nec nibh mollis pharetra. Pellentesque massa orci, accumsan
+        et libero id, imperdiet finibus enim. Nullam eget dignissim arcu, id commodo felis. Nunc sit amet purus eget sem
+        molestie accumsan.</p>
+      <ul>
+        <li>Lorems</li>
+        <li>Ipsums</li>
+        <li>Dolors</li>
+        <li>Sits</li>
+        <li>Amets</li>
+      </ul>
+      <code>struct group_info init_groups = { .usage = ATOMIC_INIT(2) };</code>
+    </section>
+    <section class="main-section" id="section_2">
+      <header><h2>Section 2</h2></header>
+      <p>Aliquam sit amet dolor non erat pretium dapibus vitae vitae mi. Mauris fringilla rhoncus sapien sit amet
+        bibendum. Curabitur placerat ipsum sagittis sapien interdum, at dapibus tortor viverra. Aliquam suscipit
+        bibendum erat, quis bibendum dolor lacinia euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nulla nibh augue, commodo ut dolor non, ornare aliquam enim. Sed dictum rutrum tincidunt. Aliquam ut risus sed
+        elit facilisis lobortis et at neque. Donec enim nisi, porta eget posuere sed, hendrerit et sem. Quisque bibendum
+        euismod est, eu mollis diam ultrices ut. Vivamus vitae porttitor orci. Morbi nec placerat nibh. </p>
+      <p>Donec elementum dolor quis erat semper, at lacinia libero efficitur. Curabitur faucibus convallis tellus eget
+        volutpat. Vivamus at odio in ligula pharetra semper ut vitae tortor. Pellentesque id consequat urna. Vivamus
+        egestas gravida dolor. Pellentesque aliquet nulla justo, ac posuere purus pulvinar id. Mauris eget eleifend mi.
+        Suspendisse scelerisque, risus vitae faucibus sodales, justo lacus lobortis risus, bibendum luctus massa risus
+        ac tellus. </p>
+      <code>nblocks = (gidsetsize + NGROUPS_PER_BLOCK - 1) / NGROUPS_PER_BLOCK; </code>
+    </section>
+    <section class="main-section" id="section_3">
+      <header><h2>Section 3</h2></header>
+      <p>Pellentesque pretium leo id eros viverra egestas. Duis fringilla, turpis at mollis dapibus, dui purus accumsan
+        odio, et facilisis sem leo non ante. Cras consequat, tellus quis fringilla consectetur, tortor ligula euismod
+        mi, in vestibulum dui urna non diam. Sed a justo ante. Quisque rhoncus imperdiet rutrum. Nam iaculis urna quam,
+        id laoreet nisi sollicitudin quis. Morbi mattis ante sit amet porttitor lobortis. Nulla facilisis commodo dolor
+        nec auctor. Etiam lorem erat, semper eget malesuada et, lobortis a magna. Mauris dictum orci nulla, rhoncus
+        maximus dolor dapibus nec. Nam ac augue tellus. Nulla consequat arcu gravida viverra hendrerit. Nulla nec diam
+        tortor. </p>
+      <p>Cras sit amet accumsan enim, eget mollis risus. Phasellus condimentum mi sed augue efficitur egestas. Aliquam
+        non tellus volutpat, sollicitudin odio ac, fermentum turpis. Suspendisse potenti. Suspendisse tempor, mi ac
+        vehicula luctus, est mi semper enim, non pharetra lorem diam non sapien. Morbi feugiat sollicitudin leo ut
+        luctus. Maecenas cursus odio vel placerat vehicula. Nulla lacinia semper hendrerit. Aliquam et lacus et urna
+        pharetra fringilla ut at ante. Cras ac tincidunt odio, tempus sagittis tellus. Mauris auctor, justo non tempor
+        lacinia, elit lorem aliquet mauris, ac blandit orci leo id nibh. Quisque et elit molestie, cursus nibh id,
+        vestibulum dolor. Duis gravida dui scelerisque, congue eros ut, blandit velit. </p>
+      <code>group_info = kmalloc(sizeof(*group_info) + nblocks*sizeof(gid_t *), GFP_USER); </code>
+    </section>
+    <section class="main-section" id="section_4">
+      <header><h2>Section 4</h2></header>
+      <p>Etiam non condimentum metus, nec commodo est. In faucibus fermentum consequat. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Nulla venenatis sit amet eros ac dapibus. Ut nec erat neque. Sed sagittis metus
+        nisl, vitae elementum orci posuere eu. Quisque eget ex quis quam semper fringilla. Maecenas vehicula elit ac
+        mauris pharetra suscipit. Vivamus nec purus at turpis facilisis porta vel ac elit. </p>
+      <p>Morbi condimentum ipsum quis magna ultricies finibus. Phasellus gravida nisi et elit condimentum eleifend.
+        Donec odio ligula, molestie id felis eget, congue eleifend enim. Aliquam venenatis sed elit eget dapibus.
+        Praesent et volutpat ligula. Aenean eu dapibus nulla. Aliquam suscipit elementum mauris sed bibendum. Integer
+        nec risus leo. Nunc ac pharetra lorem. Vivamus lectus augue, dapibus non rutrum nec, lobortis id nisi. Mauris
+        quis tellus vel sem tempor interdum at vel urna. Phasellus at congue tellus. Aenean ullamcorper vel odio id
+        molestie. Nullam ornare quam at sem eleifend viverra. Donec facilisis nunc a risus euismod vestibulum. </p>
+      <code>free_page((unsigned long)group_info->blocks[i]); </code>
+    </section>
+    <section class="main-section" id="section_5">
+      <header><h2>Section 5</h2></header>
+      <p>Pellentesque sed scelerisque tellus, vitae tincidunt enim. In hac habitasse platea dictumst. Duis tempus urna
+        tincidunt nisi malesuada commodo. Quisque vel tellus tincidunt, feugiat orci quis, viverra urna. Mauris mollis
+        dictum augue. Quisque tristique, leo nec suscipit consectetur, mauris mauris condimentum libero, eu iaculis urna
+        ex et justo. Curabitur pharetra neque eu nisi fringilla, in ullamcorper nibh vestibulum. Nunc aliquam feugiat
+        laoreet. Phasellus at orci lectus. </p>
+      <p>Etiam tincidunt sit amet lacus a vestibulum. Maecenas justo quam, ullamcorper bibendum nisl in, sodales
+        dignissim tellus. Cras ac enim fermentum, rhoncus diam quis, mattis leo. Aliquam ac consectetur risus. Donec
+        convallis posuere nisl eget interdum. Phasellus tempus, metus nec sodales feugiat, dui tellus efficitur urna,
+        nec euismod turpis neque ornare odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis lorem
+        scelerisque ipsum feugiat, sit amet sagittis odio vulputate. Etiam risus dui, scelerisque sit amet gravida nec,
+        bibendum id eros. Vestibulum orci mi, scelerisque nec lacus vel, tempus sodales nisl. Aliquam est ligula, dictum
+        euismod sagittis eget, semper vel est. </p>
+      <code>nblocks = nblocks ? : 1; </code>
+    </section>
+  </main>
+</body>
+
+</html>
