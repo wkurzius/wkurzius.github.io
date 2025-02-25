@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Distributions in two-way tables | Kurzius Math Notes</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Distributions in two-way tables" />
+<meta name="author" content="William Kurzius" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/archives/khan-academy-hs-statistics/3-two-way-tables/3.2-distributions-in-two-way-tables.html" />
+<meta property="og:url" content="http://localhost:4000/archives/khan-academy-hs-statistics/3-two-way-tables/3.2-distributions-in-two-way-tables.html" />
+<meta property="og:site_name" content="Kurzius Math Notes" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Distributions in two-way tables" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"William Kurzius"},"headline":"Distributions in two-way tables","url":"http://localhost:4000/archives/khan-academy-hs-statistics/3-two-way-tables/3.2-distributions-in-two-way-tables.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Kurzius Math Notes" /><link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.png">
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        tags: 'ams'
+      }
+    };
+  </script>
+</head><body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Kurzius Math Notes</a>
+
+    <!--<nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/calc-for-ap-larson/0.1-graphs-and-models.html">P.1 Graphs and Models</a><a class="page-link" href="/calc-for-ap-larson/0.2-linear-models-and-rates-of-change.html">P.2 Linear Models and Rates of Change</a><a class="page-link" href="/calc-for-ap-larson/0.3-functions-and-their-graphs.html">P.3 Functions and Their Graphs</a><a class="page-link" href="/calc-for-ap-larson/0.4-inverse-functions.html">P.4 Inverse Functions</a><a class="page-link" href="/calc-for-ap-larson/0.5-exponential-and-logarithmic-functions.html">P.5 Exponential and Logarithmic Functions</a><a class="page-link" href="/openstax-college-algebra-2e/1-1-real-numbers-algebra-essentials.html">1.1 Real Numbers: Algebra Essentials</a><a class="page-link" href="/openstax-college-algebra-2e/1-2-exponents-and-scientific-notation.html">1.2 Exponents and Scientific Notation</a><a class="page-link" href="/openstax-college-algebra-2e/1-3-radicals-and-rational-exponents.html">1.3 Radicals and Rational Exponents</a><a class="page-link" href="/openstax-college-algebra-2e/1-4-polynomials.html">1.4 Polynomials</a><a class="page-link" href="/openstax-college-algebra-2e/1-5-factoring-polynomials.html">1.5 Factoring Polynomials</a><a class="page-link" href="/openstax-college-algebra-2e/1-6-rational-expressions.html">1.6 Rational Expressions</a><a class="page-link" href="/calc-for-ap-larson/1.1-a-preview-of-calculus.html">1.1 A Preview of Calculus</a><a class="page-link" href="/archives/elementary-statistics-larson/1-introduction-to-statistics/1.1-an-overview-of-statistics.html">1.1 An Overview of Statistics</a><a class="page-link" href="/envision-algebra-2/1.1-key-features-of-functions.html">1.1 Key Features of Functions</a><a class="page-link" href="/archives/elementary-statistics-larson/1-introduction-to-statistics/1.2-data-classification.html">1.2 Data Classification</a><a class="page-link" href="/calc-for-ap-larson/1.2-finding-limits-graphically-and-numerically.html">1.2 Finding Limits Graphically and Numerically</a><a class="page-link" href="/envision-algebra-2/1.2-transformation-of-functions.html">1.2 Transformations of Functions</a><a class="page-link" href="/archives/khan-academy-hs-statistics/1-displaying-a-single-quantitative-variable/1.2.1-mean-and-median-in-data-displays.html">Mean and median in data displays</a><a class="page-link" href="/archives/khan-academy-hs-statistics/1-displaying-a-single-quantitative-variable/1.2.2-interquartile-range.html">Interquartile range</a><a class="page-link" href="/archives/khan-academy-hs-statistics/1-displaying-a-single-quantitative-variable/1.3-box-and-whisker-plots.html">Box and whisker plots</a><a class="page-link" href="/archives/elementary-statistics-larson/1-introduction-to-statistics/1.3-data-collection-and-experimental-design.html">1.3 Data Collection and Experimental Design</a><a class="page-link" href="/calc-for-ap-larson/1.3-evaluating-limit-analytically.html">1.3 Evaluating Limits Analytically</a><a class="page-link" href="/envision-algebra-2/1.3-piecewise-functions.html">1.3 Piecewise Functions</a><a class="page-link" href="/envision-algebra-2/1.4-arithmetic-sequences-and-series.html">1.4 Arithmetic Sequences and Series</a><a class="page-link" href="/calc-for-ap-larson/1.4-continuity-and-one-sided-limits.html">1.4 Continuity and One-Sided Limits</a><a class="page-link" href="/calc-for-ap-larson/1.5-infinite-limits.html">1.5 Infinite Limits</a><a class="page-link" href="/envision-algebra-2/1.5-solving-equations-and-inequalities-by-graphing.html">1.5 Solving Equations and Inequalities By Graphing</a><a class="page-link" href="/envision-algebra-2/1.6-example-3.html">1.6 Example 3</a><a class="page-link" href="/calc-for-ap-larson/1.6-limits-at-infinity.html">1.6 Limits at Infinity</a><a class="page-link" href="/envision-algebra-2/1.6-linear-systems.html">1.6 Linear Systems</a><a class="page-link" href="/envision-algebra-2/1.7-solving-linear-systems-using-matrices.html">1.7 Solving Linear Systems Using Matrices</a><a class="page-link" href="/openstax-college-algebra-2e/2-1-the-rectangular-coordinate-systems-and-graphs.html">2.1 The Rectangular Coordinate Systems and Graphs</a><a class="page-link" href="/archives/elementary-statistics-larson/2-descriptive-statistics/2.1-frequency-distributions-and-their-graphs.html">2.1 Frequency Distributions and Their Graphs</a><a class="page-link" href="/archives/khan-academy-hs-statistics/2-analyzing-a-single-quantitative-variable/2.1-standard-deviation.html">Standard Deviation</a><a class="page-link" href="/calc-for-ap-larson/2.1-the-derivative-and-the-tangent-line-problem.html">2.1 The Derivative and the Tangent Line Problem</a><a class="page-link" href="/envision-algebra-2/2.1-vertex-form-of-a-quadratic-formula.html">2.1 Vertex Form of a Quadratic Formula</a><a class="page-link" href="/calc-for-ap-larson/2.2-basic-differentiation-rules-and-rates-of-change.html">2.2 Basic Differentiation Rules and Rates of Change</a><a class="page-link" href="/archives/khan-academy-hs-statistics/2-analyzing-a-single-quantitative-variable/2.2-comparing-distributions.html">Comparing distributions</a><a class="page-link" href="/archives/elementary-statistics-larson/2-descriptive-statistics/2.2-more-graphs-and-displays.html">2.2 More Graphs and Displays</a><a class="page-link" href="/envision-algebra-2/2.2-standard-form-of-a-quadratic-formula.html">2.2 Standard Form of a Quadratic Formula</a><a class="page-link" href="/envision-algebra-2/2.3-factored-form-of-a-quadratic-function.html">2.3 Factored Form of a Quadratic Function</a><a class="page-link" href="/archives/elementary-statistics-larson/2-descriptive-statistics/2.3-measures-of-central-tendency.html">2.3 Measures of Central Tendency</a><a class="page-link" href="/archives/khan-academy-hs-statistics/2-analyzing-a-single-quantitative-variable/2.3-percentiles-and-z-scores.html">Percentiles and z-scores</a><a class="page-link" href="/calc-for-ap-larson/2.3-product-and-quotient-rules-and-higher-order-derivatives.html">2.3 Product and Quotient Rules and Higher-Order Derivatives</a><a class="page-link" href="/envision-algebra-2/2.4-complex-numbers-and-operations.html">2.4 Complex Numbers and Operations</a><a class="page-link" href="/archives/khan-academy-hs-statistics/2-analyzing-a-single-quantitative-variable/2.4-normal-distributions-and-the-empirical-rule.html">Normal Distributions and the Empirical Rule</a><a class="page-link" href="/calc-for-ap-larson/2.4-the-chain-rule.html">2.4 The Chain Rule</a><a class="page-link" href="/envision-algebra-2/2.5-completing-the-square.html">2.5 Completing the Square</a><a class="page-link" href="/calc-for-ap-larson/2.5-implicit-differentiation.html">2.5 Implicit Differentiation</a><a class="page-link" href="/archives/khan-academy-hs-statistics/2-analyzing-a-single-quantitative-variable/2.5-normal-distribution-calculations.html">Normal Distribution Calculations</a><a class="page-link" href="/calc-for-ap-larson/2.6-derivatives-of-inverse-functions.html">2.6 Derivatives of Inverse Functions</a><a class="page-link" href="/envision-algebra-2/2.6-the-quadratic-formula.html">2.6 The Quadratic Formula</a><a class="page-link" href="/envision-algebra-2/2.7-linear-quadratic-systems.html">2.7 Linear-Quadratic Systems</a><a class="page-link" href="/calc-for-ap-larson/2.7-related-rates.html">2.7 Related Rates</a><a class="page-link" href="/calc-for-ap-larson/3.1-extrema-on-an-interval.html">3.1 Extrema on an Interval</a><a class="page-link" href="/envision-algebra-2/3.1-graphing-polynomial-functions.html">3.1 Graphing Polynomial Functions</a><a class="page-link" href="/archives/khan-academy-hs-statistics/3-two-way-tables/3.1-two-way-tables-introduction.html">Two-way tables introduction</a><a class="page-link" href="/envision-algebra-2/3.2-adding-subtracting-and-multiplying-polynomials.html">3.2 Adding, Subtracting, and Multiplying Polynomials</a><a class="page-link" href="/archives/khan-academy-hs-statistics/3-two-way-tables/3.2-distributions-in-two-way-tables.html">Distributions in two-way tables</a><a class="page-link" href="/calc-for-ap-larson/3.2-rolles-theorem-and-the-mean-value-theorem.html">3.2 Rolle&#39;s Theorem and the Mean Value Theorem</a><a class="page-link" href="/envision-algebra-2/3.3-polynomial-identities.html">3.3 Polynomial Identities</a><a class="page-link" href="/calc-for-ap-larson/3.3-the-first-derivative-test.html">3.3 Increasing and Decreasing Functions and the First Derivative Test</a><a class="page-link" href="/calc-for-ap-larson/3.4-concavity-and-the-second-derivative-test.html">3.4 Concavity and the Second Derivative Test</a><a class="page-link" href="/envision-algebra-2/3.4-dividing-polynomials.html">3.4 Dividing Polynomials</a><a class="page-link" href="/calc-for-ap-larson/3.5-a-summary-of-curve-sketching.html">3.5 A Summary of Curve Sketching</a><a class="page-link" href="/envision-algebra-2/3.5-zeros-of-polynomial-functions.html">3.5 Zeros of Polynomial Functions</a><a class="page-link" href="/calc-for-ap-larson/3.6-optimization-problems.html">3.6 Optimization Problems</a><a class="page-link" href="/envision-algebra-2/3.6-theorems-about-roots-of-polynomial-equations.html">3.6 Theorems About Roots of Polynomial Equations</a><a class="page-link" href="/calc-for-ap-larson/3.7-linear-approximation-and-differentials.html">3.7 Linear Approximation and Differentials</a><a class="page-link" href="/envision-algebra-2/3.7-transformations-of-polynomial-functions.html">3.7 Transformations of Polynomial Functions</a><a class="page-link" href="/calc-for-ap-larson/4.1-antiderivatives.html">4.1 Antiderivatives and Indefinite Integration</a><a class="page-link" href="/envision-algebra-2/4.1-inverse-variation-and-the-reciprocal-function.html">4.1 Inverse Variation and the Reciprocal Function</a><a class="page-link" href="/calc-for-ap-larson/4.2-area.html">4.2 Area</a><a class="page-link" href="/envision-algebra-2/4.2-graphing-rational-functions.html">4.2 Graphing Rational Functions</a><a class="page-link" href="/envision-algebra-2/4.3-multiplying-and-dividing-rational-expressions.html">4.3 Multiplying and Dividing Rational Expressions</a><a class="page-link" href="/calc-for-ap-larson/4.3-reimann-sums-and-definite-integrals.html">4.3 Reimann Sums and Definite Integrals</a><a class="page-link" href="/envision-algebra-2/4.4-adding-and-subtracting-rational-expressions.html">4.4 Adding and Subtracting Rational Expressions</a><a class="page-link" href="/calc-for-ap-larson/4.4-the-fundamental-theorem-of-calculus.html">4.4 The Fundamental Theorem of Calculus</a><a class="page-link" href="/envision-algebra-2/4.5-solving-rational-equations.html">4.5 Solving Rational Equations</a><a class="page-link" href="/calc-for-ap-larson/4.5-the-net-change-theorem.html">4.5 The Net Change Theorem</a><a class="page-link" href="/calc-for-ap-larson/4.6-integration-by-substitution.html">4.6 Integration by Substitution</a><a class="page-link" href="/calc-for-ap-larson/4.7-the-natural-logarithmic-function-integration.html">4.7 The Natural Logarithmic Function: Integration</a><a class="page-link" href="/calc-for-ap-larson/4.8-inverse-trigonometric-function-integration.html">4.8 Inverse Trigonometric Functions: Integration</a><a class="page-link" href="/envision-algebra-2/5-1-nth-roots-radicals-and-rational-exponents.html">5.1 𝘯th Roots, Radicals, and Rational Exponents</a><a class="page-link" href="/envision-algebra-2/5-2-properties-of-exponents-and-radicals.html">5.2 Properties of Exponents and Radicals</a><a class="page-link" href="/envision-algebra-2/5-3-graphing-radical-functions.html">5.3 Graphing Radical Functions</a><a class="page-link" href="/envision-algebra-2/5-4-solving-radical-equations.html">5.4 Solving Radical Equations</a><a class="page-link" href="/envision-algebra-2/5-5-function-operations.html">5.5 Function Operations</a><a class="page-link" href="/envision-algebra-2/5-6-inverse-relations-and-functions.html">5.6 Inverse Relations and Functions</a><a class="page-link" href="/calc-for-ap-larson/5.1-slope-fields-and-eulers-method.html">5.1 Slope Fields and Euler&#39;s Method</a><a class="page-link" href="/calc-for-ap-larson/5.2-growth-and-decay.html">5.2 Growth and Decay</a><a class="page-link" href="/calc-for-ap-larson/5.3-separation-of-variables.html">5.3 Separation of Variables</a><a class="page-link" href="/calc-for-ap-larson/6.1-area-of-a-region-between-two-curves.html">6.1 Area of a Region Between Two Curves</a><a class="page-link" href="/calc-for-ap-larson/6.2-volume-the-disk-and-washer-methods.html">6.2 Volume: The Disk and Washer Methods</a><a class="page-link" href="/calc-for-ap-larson/7.1-basic-integration-rules.html">7.1 Basic Integration Rules</a><a class="page-link" href="/calc-for-ap-larson/7.7-indeterminate-forms-and-lhopitals-rule.html">7.7 Indeterminate Forms and L&#39;Hôpital&#39;s Rule</a><a class="page-link" href="/TODO.html">TODO</a><a class="page-link" href="/misc/bell-schedule.html">Bell Schedules</a><a class="page-link" href="/">Home</a><a class="page-link" href="/calc-for-ap-larson/">Calculus for AP 2e Notes</a><a class="page-link" href="/archives/elementary-statistics-larson/">Elementary Statistics Picturing the World 6e</a><a class="page-link" href="/archives/">Archives</a><a class="page-link" href="/archives/khan-academy-hs-statistics/">Khan Academy: High School Statistics Notes</a><a class="page-link" href="/openstax-college-algebra-2e/">OpenStax College Algebra 2e</a><a class="page-link" href="/envision-algebra-2/">enVision Algebra 2 Common Core 2018 Notes</a><a class="page-link" href="/misc/math-links.html">Useful Math Links</a><a class="page-link" href="/archives/khan-academy-hs-statistics/6-probability/part-1.html">Probability Part 1</a><a class="page-link" href="/archives/khan-academy-hs-statistics/6-probability/part-2.html">Probability Part 2</a><a class="page-link" href="/this-week.html">This Week (Feb. 24–Feb. 28)</a></div>
+      </nav>-->
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Distributions in two-way tables</h1>
+  </header>
+
+  <div class="post-content">
+    <p><a href="https://1drv.ms/p/c/c4097c61e06a2b97/EdhOpBYVUghJm8eHuyJuihYBSM7LAHQmNmAej6b2L-lCtQ?e=NbV1WA">Slideshow version</a></p>
+
+<hr />
+
+<p>This last section is all about marginal vs conditional distributions in two-way tables. Let’s look at our table from last section to see where we can find these different distributions.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Morning</th>
+      <th>Evening</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Coffee</td>
+      <td>45</td>
+      <td>15</td>
+      <td><strong>60</strong></td>
+    </tr>
+    <tr>
+      <td>Tea</td>
+      <td>10</td>
+      <td>42</td>
+      <td><strong>52</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Total</strong></td>
+      <td><strong>55</strong></td>
+      <td><strong>57</strong></td>
+      <td><strong>112</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>First up is marginal distributions, which you can find on the margins (i.e. edges) of the table. These only look at the distribution of one variable. The marginal distribution of preferred drinks would be</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Morning</th>
+      <th>Evening</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Coffee</td>
+      <td>45</td>
+      <td>15</td>
+      <td><strong class="red">60</strong></td>
+    </tr>
+    <tr>
+      <td>Tea</td>
+      <td>10</td>
+      <td>42</td>
+      <td><strong class="red">52</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Total</strong></td>
+      <td><strong>55</strong></td>
+      <td><strong>57</strong></td>
+      <td><strong>112</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The marginal distribution of preferred time to drink would be</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Morning</th>
+      <th>Evening</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Coffee</td>
+      <td>45</td>
+      <td>15</td>
+      <td><strong>60</strong></td>
+    </tr>
+    <tr>
+      <td>Tea</td>
+      <td>10</td>
+      <td>42</td>
+      <td><strong>52</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Total</strong></td>
+      <td><strong class="red">55</strong></td>
+      <td><strong class="red">57</strong></td>
+      <td><strong>112</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If you need percentages for either of these, divide each number by the total, so 112 in this case.</p>
+
+<p>Conditional distributions on the other hand, involve both variables. The conditional distribution of preferred time to drink for coffee drinkers would be</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Morning</th>
+      <th>Evening</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Coffee</td>
+      <td><em class="red">45</em></td>
+      <td><em class="red">15</em></td>
+      <td><strong>60</strong></td>
+    </tr>
+    <tr>
+      <td>Tea</td>
+      <td>10</td>
+      <td>42</td>
+      <td><strong>52</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Total</strong></td>
+      <td><strong>55</strong></td>
+      <td><strong>57</strong></td>
+      <td><strong>112</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The conditional distribution of proffered drink for evening drinkers would be</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Morning</th>
+      <th>Evening</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Coffee</td>
+      <td>45</td>
+      <td><em class="red">15</em></td>
+      <td><strong>60</strong></td>
+    </tr>
+    <tr>
+      <td>Tea</td>
+      <td>10</td>
+      <td><em class="red">42</em></td>
+      <td><strong>52</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Total</strong></td>
+      <td><strong>55</strong></td>
+      <td><strong>57</strong></td>
+      <td><strong>112</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>And again, if you need percentages, divide by the the total. The catch here is to use the relevant total. For the first one, the total is 60. The second example’s total was 57.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <!--
+    <h2 class="footer-heading">Kurzius Math Notes</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">William Kurzius</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+    -->
+  </div>
+
+</footer>
+</body>
+
+</html>

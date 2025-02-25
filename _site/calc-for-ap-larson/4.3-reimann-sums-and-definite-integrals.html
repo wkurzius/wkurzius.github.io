@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>4.3 Reimann Sums and Definite Integrals | Kurzius Math Notes</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="4.3 Reimann Sums and Definite Integrals" />
+<meta name="author" content="William Kurzius" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/calc-for-ap-larson/4.3-reimann-sums-and-definite-integrals.html" />
+<meta property="og:url" content="http://localhost:4000/calc-for-ap-larson/4.3-reimann-sums-and-definite-integrals.html" />
+<meta property="og:site_name" content="Kurzius Math Notes" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="4.3 Reimann Sums and Definite Integrals" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"William Kurzius"},"headline":"4.3 Reimann Sums and Definite Integrals","url":"http://localhost:4000/calc-for-ap-larson/4.3-reimann-sums-and-definite-integrals.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Kurzius Math Notes" /><link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.png">
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        tags: 'ams'
+      }
+    };
+  </script>
+</head><body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Kurzius Math Notes</a>
+
+    <!--<nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/calc-for-ap-larson/0.1-graphs-and-models.html">P.1 Graphs and Models</a><a class="page-link" href="/calc-for-ap-larson/0.2-linear-models-and-rates-of-change.html">P.2 Linear Models and Rates of Change</a><a class="page-link" href="/calc-for-ap-larson/0.3-functions-and-their-graphs.html">P.3 Functions and Their Graphs</a><a class="page-link" href="/calc-for-ap-larson/0.4-inverse-functions.html">P.4 Inverse Functions</a><a class="page-link" href="/calc-for-ap-larson/0.5-exponential-and-logarithmic-functions.html">P.5 Exponential and Logarithmic Functions</a><a class="page-link" href="/openstax-college-algebra-2e/1-1-real-numbers-algebra-essentials.html">1.1 Real Numbers: Algebra Essentials</a><a class="page-link" href="/openstax-college-algebra-2e/1-2-exponents-and-scientific-notation.html">1.2 Exponents and Scientific Notation</a><a class="page-link" href="/openstax-college-algebra-2e/1-3-radicals-and-rational-exponents.html">1.3 Radicals and Rational Exponents</a><a class="page-link" href="/openstax-college-algebra-2e/1-4-polynomials.html">1.4 Polynomials</a><a class="page-link" href="/openstax-college-algebra-2e/1-5-factoring-polynomials.html">1.5 Factoring Polynomials</a><a class="page-link" href="/openstax-college-algebra-2e/1-6-rational-expressions.html">1.6 Rational Expressions</a><a class="page-link" href="/calc-for-ap-larson/1.1-a-preview-of-calculus.html">1.1 A Preview of Calculus</a><a class="page-link" href="/archives/elementary-statistics-larson/1-introduction-to-statistics/1.1-an-overview-of-statistics.html">1.1 An Overview of Statistics</a><a class="page-link" href="/envision-algebra-2/1.1-key-features-of-functions.html">1.1 Key Features of Functions</a><a class="page-link" href="/archives/elementary-statistics-larson/1-introduction-to-statistics/1.2-data-classification.html">1.2 Data Classification</a><a class="page-link" href="/calc-for-ap-larson/1.2-finding-limits-graphically-and-numerically.html">1.2 Finding Limits Graphically and Numerically</a><a class="page-link" href="/envision-algebra-2/1.2-transformation-of-functions.html">1.2 Transformations of Functions</a><a class="page-link" href="/archives/khan-academy-hs-statistics/1-displaying-a-single-quantitative-variable/1.2.1-mean-and-median-in-data-displays.html">Mean and median in data displays</a><a class="page-link" href="/archives/khan-academy-hs-statistics/1-displaying-a-single-quantitative-variable/1.2.2-interquartile-range.html">Interquartile range</a><a class="page-link" href="/archives/khan-academy-hs-statistics/1-displaying-a-single-quantitative-variable/1.3-box-and-whisker-plots.html">Box and whisker plots</a><a class="page-link" href="/archives/elementary-statistics-larson/1-introduction-to-statistics/1.3-data-collection-and-experimental-design.html">1.3 Data Collection and Experimental Design</a><a class="page-link" href="/calc-for-ap-larson/1.3-evaluating-limit-analytically.html">1.3 Evaluating Limits Analytically</a><a class="page-link" href="/envision-algebra-2/1.3-piecewise-functions.html">1.3 Piecewise Functions</a><a class="page-link" href="/envision-algebra-2/1.4-arithmetic-sequences-and-series.html">1.4 Arithmetic Sequences and Series</a><a class="page-link" href="/calc-for-ap-larson/1.4-continuity-and-one-sided-limits.html">1.4 Continuity and One-Sided Limits</a><a class="page-link" href="/calc-for-ap-larson/1.5-infinite-limits.html">1.5 Infinite Limits</a><a class="page-link" href="/envision-algebra-2/1.5-solving-equations-and-inequalities-by-graphing.html">1.5 Solving Equations and Inequalities By Graphing</a><a class="page-link" href="/envision-algebra-2/1.6-example-3.html">1.6 Example 3</a><a class="page-link" href="/calc-for-ap-larson/1.6-limits-at-infinity.html">1.6 Limits at Infinity</a><a class="page-link" href="/envision-algebra-2/1.6-linear-systems.html">1.6 Linear Systems</a><a class="page-link" href="/envision-algebra-2/1.7-solving-linear-systems-using-matrices.html">1.7 Solving Linear Systems Using Matrices</a><a class="page-link" href="/openstax-college-algebra-2e/2-1-the-rectangular-coordinate-systems-and-graphs.html">2.1 The Rectangular Coordinate Systems and Graphs</a><a class="page-link" href="/archives/elementary-statistics-larson/2-descriptive-statistics/2.1-frequency-distributions-and-their-graphs.html">2.1 Frequency Distributions and Their Graphs</a><a class="page-link" href="/archives/khan-academy-hs-statistics/2-analyzing-a-single-quantitative-variable/2.1-standard-deviation.html">Standard Deviation</a><a class="page-link" href="/calc-for-ap-larson/2.1-the-derivative-and-the-tangent-line-problem.html">2.1 The Derivative and the Tangent Line Problem</a><a class="page-link" href="/envision-algebra-2/2.1-vertex-form-of-a-quadratic-formula.html">2.1 Vertex Form of a Quadratic Formula</a><a class="page-link" href="/calc-for-ap-larson/2.2-basic-differentiation-rules-and-rates-of-change.html">2.2 Basic Differentiation Rules and Rates of Change</a><a class="page-link" href="/archives/khan-academy-hs-statistics/2-analyzing-a-single-quantitative-variable/2.2-comparing-distributions.html">Comparing distributions</a><a class="page-link" href="/archives/elementary-statistics-larson/2-descriptive-statistics/2.2-more-graphs-and-displays.html">2.2 More Graphs and Displays</a><a class="page-link" href="/envision-algebra-2/2.2-standard-form-of-a-quadratic-formula.html">2.2 Standard Form of a Quadratic Formula</a><a class="page-link" href="/envision-algebra-2/2.3-factored-form-of-a-quadratic-function.html">2.3 Factored Form of a Quadratic Function</a><a class="page-link" href="/archives/elementary-statistics-larson/2-descriptive-statistics/2.3-measures-of-central-tendency.html">2.3 Measures of Central Tendency</a><a class="page-link" href="/archives/khan-academy-hs-statistics/2-analyzing-a-single-quantitative-variable/2.3-percentiles-and-z-scores.html">Percentiles and z-scores</a><a class="page-link" href="/calc-for-ap-larson/2.3-product-and-quotient-rules-and-higher-order-derivatives.html">2.3 Product and Quotient Rules and Higher-Order Derivatives</a><a class="page-link" href="/envision-algebra-2/2.4-complex-numbers-and-operations.html">2.4 Complex Numbers and Operations</a><a class="page-link" href="/archives/khan-academy-hs-statistics/2-analyzing-a-single-quantitative-variable/2.4-normal-distributions-and-the-empirical-rule.html">Normal Distributions and the Empirical Rule</a><a class="page-link" href="/calc-for-ap-larson/2.4-the-chain-rule.html">2.4 The Chain Rule</a><a class="page-link" href="/envision-algebra-2/2.5-completing-the-square.html">2.5 Completing the Square</a><a class="page-link" href="/calc-for-ap-larson/2.5-implicit-differentiation.html">2.5 Implicit Differentiation</a><a class="page-link" href="/archives/khan-academy-hs-statistics/2-analyzing-a-single-quantitative-variable/2.5-normal-distribution-calculations.html">Normal Distribution Calculations</a><a class="page-link" href="/calc-for-ap-larson/2.6-derivatives-of-inverse-functions.html">2.6 Derivatives of Inverse Functions</a><a class="page-link" href="/envision-algebra-2/2.6-the-quadratic-formula.html">2.6 The Quadratic Formula</a><a class="page-link" href="/envision-algebra-2/2.7-linear-quadratic-systems.html">2.7 Linear-Quadratic Systems</a><a class="page-link" href="/calc-for-ap-larson/2.7-related-rates.html">2.7 Related Rates</a><a class="page-link" href="/calc-for-ap-larson/3.1-extrema-on-an-interval.html">3.1 Extrema on an Interval</a><a class="page-link" href="/envision-algebra-2/3.1-graphing-polynomial-functions.html">3.1 Graphing Polynomial Functions</a><a class="page-link" href="/archives/khan-academy-hs-statistics/3-two-way-tables/3.1-two-way-tables-introduction.html">Two-way tables introduction</a><a class="page-link" href="/envision-algebra-2/3.2-adding-subtracting-and-multiplying-polynomials.html">3.2 Adding, Subtracting, and Multiplying Polynomials</a><a class="page-link" href="/archives/khan-academy-hs-statistics/3-two-way-tables/3.2-distributions-in-two-way-tables.html">Distributions in two-way tables</a><a class="page-link" href="/calc-for-ap-larson/3.2-rolles-theorem-and-the-mean-value-theorem.html">3.2 Rolle&#39;s Theorem and the Mean Value Theorem</a><a class="page-link" href="/envision-algebra-2/3.3-polynomial-identities.html">3.3 Polynomial Identities</a><a class="page-link" href="/calc-for-ap-larson/3.3-the-first-derivative-test.html">3.3 Increasing and Decreasing Functions and the First Derivative Test</a><a class="page-link" href="/calc-for-ap-larson/3.4-concavity-and-the-second-derivative-test.html">3.4 Concavity and the Second Derivative Test</a><a class="page-link" href="/envision-algebra-2/3.4-dividing-polynomials.html">3.4 Dividing Polynomials</a><a class="page-link" href="/calc-for-ap-larson/3.5-a-summary-of-curve-sketching.html">3.5 A Summary of Curve Sketching</a><a class="page-link" href="/envision-algebra-2/3.5-zeros-of-polynomial-functions.html">3.5 Zeros of Polynomial Functions</a><a class="page-link" href="/calc-for-ap-larson/3.6-optimization-problems.html">3.6 Optimization Problems</a><a class="page-link" href="/envision-algebra-2/3.6-theorems-about-roots-of-polynomial-equations.html">3.6 Theorems About Roots of Polynomial Equations</a><a class="page-link" href="/calc-for-ap-larson/3.7-linear-approximation-and-differentials.html">3.7 Linear Approximation and Differentials</a><a class="page-link" href="/envision-algebra-2/3.7-transformations-of-polynomial-functions.html">3.7 Transformations of Polynomial Functions</a><a class="page-link" href="/calc-for-ap-larson/4.1-antiderivatives.html">4.1 Antiderivatives and Indefinite Integration</a><a class="page-link" href="/envision-algebra-2/4.1-inverse-variation-and-the-reciprocal-function.html">4.1 Inverse Variation and the Reciprocal Function</a><a class="page-link" href="/calc-for-ap-larson/4.2-area.html">4.2 Area</a><a class="page-link" href="/envision-algebra-2/4.2-graphing-rational-functions.html">4.2 Graphing Rational Functions</a><a class="page-link" href="/envision-algebra-2/4.3-multiplying-and-dividing-rational-expressions.html">4.3 Multiplying and Dividing Rational Expressions</a><a class="page-link" href="/calc-for-ap-larson/4.3-reimann-sums-and-definite-integrals.html">4.3 Reimann Sums and Definite Integrals</a><a class="page-link" href="/envision-algebra-2/4.4-adding-and-subtracting-rational-expressions.html">4.4 Adding and Subtracting Rational Expressions</a><a class="page-link" href="/calc-for-ap-larson/4.4-the-fundamental-theorem-of-calculus.html">4.4 The Fundamental Theorem of Calculus</a><a class="page-link" href="/envision-algebra-2/4.5-solving-rational-equations.html">4.5 Solving Rational Equations</a><a class="page-link" href="/calc-for-ap-larson/4.5-the-net-change-theorem.html">4.5 The Net Change Theorem</a><a class="page-link" href="/calc-for-ap-larson/4.6-integration-by-substitution.html">4.6 Integration by Substitution</a><a class="page-link" href="/calc-for-ap-larson/4.7-the-natural-logarithmic-function-integration.html">4.7 The Natural Logarithmic Function: Integration</a><a class="page-link" href="/calc-for-ap-larson/4.8-inverse-trigonometric-function-integration.html">4.8 Inverse Trigonometric Functions: Integration</a><a class="page-link" href="/envision-algebra-2/5-1-nth-roots-radicals-and-rational-exponents.html">5.1 𝘯th Roots, Radicals, and Rational Exponents</a><a class="page-link" href="/envision-algebra-2/5-2-properties-of-exponents-and-radicals.html">5.2 Properties of Exponents and Radicals</a><a class="page-link" href="/envision-algebra-2/5-3-graphing-radical-functions.html">5.3 Graphing Radical Functions</a><a class="page-link" href="/envision-algebra-2/5-4-solving-radical-equations.html">5.4 Solving Radical Equations</a><a class="page-link" href="/envision-algebra-2/5-5-function-operations.html">5.5 Function Operations</a><a class="page-link" href="/envision-algebra-2/5-6-inverse-relations-and-functions.html">5.6 Inverse Relations and Functions</a><a class="page-link" href="/calc-for-ap-larson/5.1-slope-fields-and-eulers-method.html">5.1 Slope Fields and Euler&#39;s Method</a><a class="page-link" href="/calc-for-ap-larson/5.2-growth-and-decay.html">5.2 Growth and Decay</a><a class="page-link" href="/calc-for-ap-larson/5.3-separation-of-variables.html">5.3 Separation of Variables</a><a class="page-link" href="/calc-for-ap-larson/6.1-area-of-a-region-between-two-curves.html">6.1 Area of a Region Between Two Curves</a><a class="page-link" href="/calc-for-ap-larson/6.2-volume-the-disk-and-washer-methods.html">6.2 Volume: The Disk and Washer Methods</a><a class="page-link" href="/calc-for-ap-larson/7.1-basic-integration-rules.html">7.1 Basic Integration Rules</a><a class="page-link" href="/calc-for-ap-larson/7.7-indeterminate-forms-and-lhopitals-rule.html">7.7 Indeterminate Forms and L&#39;Hôpital&#39;s Rule</a><a class="page-link" href="/TODO.html">TODO</a><a class="page-link" href="/misc/bell-schedule.html">Bell Schedules</a><a class="page-link" href="/">Home</a><a class="page-link" href="/calc-for-ap-larson/">Calculus for AP 2e Notes</a><a class="page-link" href="/archives/elementary-statistics-larson/">Elementary Statistics Picturing the World 6e</a><a class="page-link" href="/archives/">Archives</a><a class="page-link" href="/archives/khan-academy-hs-statistics/">Khan Academy: High School Statistics Notes</a><a class="page-link" href="/openstax-college-algebra-2e/">OpenStax College Algebra 2e</a><a class="page-link" href="/envision-algebra-2/">enVision Algebra 2 Common Core 2018 Notes</a><a class="page-link" href="/misc/math-links.html">Useful Math Links</a><a class="page-link" href="/archives/khan-academy-hs-statistics/6-probability/part-1.html">Probability Part 1</a><a class="page-link" href="/archives/khan-academy-hs-statistics/6-probability/part-2.html">Probability Part 2</a><a class="page-link" href="/this-week.html">This Week (Feb. 24–Feb. 28)</a></div>
+      </nav>-->
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">4.3 Reimann Sums and Definite Integrals</h1>
+  </header>
+
+  <div class="post-content">
+    <p class="lesson-dates">Lesson date: February 11, 2025.</p>
+
+<ul>
+  <li>Understand the definition of a Riemann sum.</li>
+  <li>Evaluate a definite integral using limits and geometric formulas.</li>
+  <li>Evaluate a definite integral using properties of definite integrals.</li>
+  <li>Approximate a definite integral using the Trapezoidal Rule.</li>
+  <li>Analyze the approximate error in the Trapezoidal Rule.</li>
+</ul>
+
+<h2 id="assignment">Assignment</h2>
+
+<ul>
+  <li><strong>Vocabulary</strong> and <strong class="teal-box">teal boxes</strong></li>
+  <li>p312 1–5 odd, 9–14, 18, 20, 25, 30, 31–35 odd, 40–50 even, 51, 53, 54, 57, 61–65 odd <em class="ap-problems">74, 75, 89, 92, 94, 114–117</em></li>
+</ul>
+
+<h2 id="additional-resources">Additional Resources</h2>
+
+<ul>
+  <li>AP Topics: 6.2, 6.3, 6.6, 6.8</li>
+  <li>Khan Academy
+    <ul>
+      <li><a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-2/v/simple-riemann-approximation-using-rectangles">Approximating areas with Riemann sums</a></li>
+      <li><a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/sigma-notation-sum">Riemann sums, summation notation, and definite integral notation</a></li>
+      <li><a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-6/v/negative-definite-integrals">Applying properties of definite integrals</a></li>
+      <li><a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-8a/v/indefinite-integrals-of-x-raised-to-a-power">Finding antiderivatives and integrals: basic rules and notation: reverse power rule</a></li>
+      <li><a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-8b/v/antiderivative-of-x-1">Finding antiderivatives and integrals: basic rules and notation: common indefinite integrals</a></li>
+      <li><a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-8c/v/reverse-power-rule-for-definite-integrals">Finding antiderivatives and integrals: basic rules and notation: definite integrals</a></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<p>This section is an extension of the previous one, and will introduce some new (old?) notation along with another way to estimate area under a curve.</p>
+
+<h2 id="riemann-sums">Riemann Sums</h2>
+
+<p>Last section, rectangle widths were consistent, but that is not necessary and sometimes isn’t desired. For instance, finding the area under $\sqrt{x}$. Trying it with our old method leads to a problem.</p>
+
+\[\begin{align}
+\lim_{n \to \infty} \sum_{i=1}^n \frac{1}{n} \left( \sqrt{\frac{i}{n}} \right) = \lim_{n \to \infty} \frac{1}{n\sqrt{n}} \sum_{i=1}^n \sqrt{i}
+\end{align}\]
+
+<p>We haven’t touched how to replace $\sum \sqrt{i}$ and won’t (because <a href="https://math.stackexchange.com/questions/938225/calculate-summation-of-square-roots">harmonic numbers</a> are way beyond our scope).</p>
+
+<p>But what would be really helpful is a $\sqrt{i^2/n^2}$ instead of $\sqrt{i/n}$. This would lead to rectangles of varying width, but because we want $n \to \infty$ the widest rectangle will still have a width approaching zero.</p>
+
+<p>Speaking of width, we do have to deal with that since it will no longer be $1/n$. To find it, we subtract the left endpoint from the right one. With equal width, that looked like</p>
+
+\[\begin{align}
+\frac{i}{n} - \frac{i-1}{n} = \frac{1}{n}
+\end{align}\]
+
+<p>but since we’ve switched to a different value for our function, we need to recompute it.</p>
+
+\[\begin{align}
+\frac{i^2}{n^2} - \frac{(i-1)^2}{n^2} = \frac{2i - 1}{n^2}
+\end{align}\]
+
+<p>So our new summation is</p>
+
+\[\begin{align}
+\lim_{n \to \infty} \sum_{i=1}^n \frac{2i-1}{n^2} \cdot \sqrt{\frac{i^2}{n^2}}
+\end{align}\]
+
+<p>What we found above, and in the previous section, is called a Riemann sum. Riemann sums can be used for more than just finding area, so a more general definition is needed.</p>
+
+\[\begin{align}
+\sum^n_{i=1} f(c_i)\, \Delta x_i
+\end{align}\]
+
+<p>This is almost identical to what we dealt with last section, with a couple notable exceptions.</p>
+
+<ol>
+  <li>The width of a partition can vary, hence $\Delta x_i$ instead of $\Delta x$.</li>
+  <li>$f$ does not need to be continuous and nonnegative</li>
+</ol>
+
+<p>The last point you might not have noticed, but last section we only dealt with continuous and nonnegative functions to keep things simple.</p>
+
+<p>One thing this does is change how we approach the limit of our sum. Because our widths can be inconsistent, $n\to\infty$ does not necessarily mean that our widths will approach zero. So, our limit definition will have to shift to $\lVert\Delta\rVert\to 0$, where $\Vert\Delta\Vert$ is the width of the largest partition.</p>
+
+<p>With that said, $n\to\infty$ and $\lVert\Delta\rVert\to 0$ are basically equivalent for everything we’ll do here, so they can be used interchangeably.</p>
+
+<h2 id="definite-integral">Definite Integral</h2>
+
+<p>Our notation for finding the area under a curve is getting a bit wild, so we’re going to start writing it a different way. Here is our full Riemann sum formula, along with the new notation.</p>
+
+\[\begin{align}
+\lim_{\Vert\Delta\Vert\to 0} \sum_{i=1}^n f(c_i) \Delta x_i = \int_a^b f(x) \, dx
+\end{align}\]
+
+<p>That new notation looks a lot like what we did with antidifferentiation. The difference though, is this is a <strong>definite integral</strong> and produces a value, whereas before we dealt with indefinite integrals, which only produced families of functions. For instance</p>
+
+\[\begin{align}
+\int x^2 \, dx &amp;= \frac{x^3}{3} + C \\
+\int_0^1 x^2 \, dx &amp;= \frac{1}{3}
+\end{align}\]
+
+<p>Let’s try one out and determine the value of $\int_{-2}^1 2x \, dx$. Before we begin, we need to determine our widths and what $x$-value we’ll use to determine the heights.</p>
+
+<p><img src="../img/4.3-figure-1.png" alt="4.3 Figure 1" /></p>
+
+<p>The function is a straightforward linear function, so we’ll use the tried and true consistent-width intervals, which means $\frac{3}{n}$ in this case.</p>
+
+<p>For our $x$-values, we have three choices: right endpoint, left endpoint and midpoint. For what we are doing here, right endpoint is typically the best choice as its the simplest.</p>
+
+<blockquote>
+  <p>It’s worth noting that throughout your entire math education, you’ve been given pretty problems that evaluate nicely. This is done for the sake of teaching you the material, but reality can be much different. These multiple definitions and choice of endpoints are incredibly useful outside of the classroom where flexibility is needed, and efficiency is prioritized over accuracy (how many decimal points of accuracy do we really need?).</p>
+
+  <p>One quick example: imagine you have to find the area under a curve, but the curve is not actually a curve but a collection of data points. You don’t have a function to work with, just a bunch of dots on a graph.</p>
+</blockquote>
+
+<p>With our point chosen, we arrive at $(-2+\frac{3}{n}i)$ for our $x$-values and we can start work.</p>
+
+\[\begin{align}
+\int_{-2}^1 2x \, dx &amp;= \lim_{n\to\infty} \sum_{i=1}^n 2\left(-2 +\frac{3i}{n}\right) \frac{3}{n} \\
+                     &amp; \dots \\
+                     &amp;= \lim_{n\to\infty} \left(-12+9+\frac{9}{n}\right) \\
+                     &amp;= -3
+\end{align}\]
+
+<p>A negative number is something new and shows the problem with the new lax definition. The function $2x$ is continuous, but it is negative left of 0. So although we got a value, it does not represent the area under the curve. This is something we will eventually tackles, but just keep it in mind for now.</p>
+
+<p>You also might have noticed there is another way to find the area under this curve: find the area of the triangles. While the summation technique will work, sometimes it’s easier to use what you know from geometry to evaluate certain definite integrals. Constant functions will give you rectangles, linear functions produce triangles and trapezoids, and you’ll even see some semicircles with $\sqrt{a^2 - x^2}$.</p>
+
+<h2 id="properties-of-definite-integrals">Properties of Definite Integrals</h2>
+
+<p>Examples 4 through 7 highlight the various properties of definite integrals, but I won’t cover them here since they are essentially the same as the summations. The one notable addition is the negative definite integral, where the interval can be reversed.</p>
+
+\[\begin{align}
+\int_a^b f(x)\, dx = - \int_b^a f(x)\, dx
+\end{align}\]
+
+<h2 id="trapezoidal-rule">Trapezoidal Rule</h2>
+
+<p>Along with breaking an area into rectangles, there is another method for estimation that uses trapezoids. The area of a trapezoid is $\frac{1}{2}h(b_1+b_2)$, but since our trapezoids are vertical our height is really the width $\frac{b-a}{n}$, and the bases are our heights, or $y$ values.</p>
+
+<p><img src="../img/4.3-figure-2.png" alt="4.3 Figure 2" /></p>
+
+<p>Through a little algebra manipulation, as we start adding up our areas, we arrive at this formula.</p>
+
+\[\begin{align}
+\frac{b-a}{2n}\left[f(x_0) + f(x_1)\right] + \frac{b-a}{2n}\left[f(x_1) + f(x_2)\right] + \dots + \frac{b-a}{2n}\left[f(x_{n-1}) + f(x_n)\right] = \\
+\frac{b-a}{2n}\left[f(x_0) + 2f(x_1) + 2f(x_2) + \dots + 2f(x_{n-1}) + f(x_n)\right]
+\end{align}\]
+
+<p>Note that the inner bases are all doubled up, while the two outer ones are not. This is because each inner base is shared with two trapezoids.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <!--
+    <h2 class="footer-heading">Kurzius Math Notes</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">William Kurzius</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+    -->
+  </div>
+
+</footer>
+</body>
+
+</html>

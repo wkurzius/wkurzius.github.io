@@ -1,0 +1,89 @@
+/*https://coolors.co/71f79f-3dd6d0-15b097-513c2c-28190e*/
+
+:root {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  #navbar {
+    background-color: #513C2C;
+    color: white;
+    position: fixed;
+    width: 20rem;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  
+  #navbar header {
+    background-color: #15B097;
+    font-size: large;
+    font-weight: bold;
+    padding: 1rem;
+  }
+
+  h1 {
+    margin: 0;
+  }
+  
+  #navbar-links {
+    padding: 1rem;
+  }
+  
+  #navbar a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: large;
+    line-height: 2rem;
+  }
+  
+  #navbar a:hover {
+    color: #71F79F;
+  }
+  
+  #main-doc {
+    padding: 1rem 1rem 1rem 21rem;
+    box-sizing: border-box;
+  }
+  
+  #main-doc header {
+    /*font-size: x-large;*/
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+  
+  #main-doc section:first-child header {
+    margin-top: inherit;
+  }
+
+  #main-doc section:first-child h2 {
+    margin-top: inherit;
+  }
+  
+  code {
+    background: #eee;
+    padding: 0.5rem;
+    width: 100%;
+    font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+    display: block;
+  }
+  
+  @media (max-width: 60rem) {
+    #navbar {
+      position: sticky;
+      top: 0;
+      display: sticky;
+      max-height: 15rem;
+      width: inherit;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+    #main-doc {
+      padding: 1rem;
+    }
+  }
+  

@@ -1,0 +1,132 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+	background-color: #b8c8d5;
+	font-size: 16px;
+}
+
+#header-wrapper {
+	background-color: #607382;
+	position: sticky;
+	top: 0;
+	padding: 0.5rem;
+}
+
+#header {
+	width: 50rem;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+#nav-bar a {
+	text-decoration: none;
+	font-size: 1.5rem;
+	margin-left: 2rem;
+	color: white;
+}
+
+main {
+	max-width: 50rem;
+	margin: auto;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+#logo {
+	flex-grow: 1;
+}
+
+#logo img {
+	height: 2rem;
+}
+
+#features {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+#features .feature {
+	width: 30%;
+	border: 1px solid black;
+}
+
+#features h3 {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	border-bottom: 1px solid black;
+	padding: 0.5rem 0;
+	margin-top: 0;
+	background-color: #182836;
+	color: white;
+}
+
+#features .icon {
+	text-align: center;
+	color: #182836;
+}
+
+#features .description {
+	hyphens: auto;
+	padding: 0.5rem;
+}
+
+#home {
+	margin: 3rem 0 5rem;
+}
+
+#home p {
+	max-width: 40rem;
+	margin: auto auto 3rem;
+	line-height: 1.3rem;
+	font-size: 16px;
+	hyphens: auto;
+}
+
+#video {
+	display: block;
+	margin: auto;
+	max-width: 560px;
+}
+
+#form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input {
+	padding: 0.5rem;
+	margin-bottom: 0.3rem;
+}
+
+#name, #email {
+	width: 15rem;
+}
+
+#submit {
+	width: 6rem;
+	background-color: #182836;
+	color: white;
+	border: none;
+}
+
+@media (max-width: 600px) {
+
+	#nav-bar {
+		display: none;
+	}
+	
+	#features {
+		flex-direction: column;
+	}
+
+	#features .feature {
+		width: 100%;
+	}
+
+}
+
