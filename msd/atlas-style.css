@@ -1,0 +1,317 @@
+/* hide search for board memebers */
+#module-content-13654 > div > div > div.floatleft,
+#module-content-13654 > div > div > div.floatright {
+	display: none;
+}
+
+/* External links (abandoned, can't keep track of the number of xx-content pages schoolwires insists on using) */
+/*#sp-content a[href^="https://"]:not([href*="manvilleschools.org"]):after {
+	display: inline-block;
+	font-style: normal;
+ 	font-variant: normal;
+ 	text-rendering: auto;
+ 	-webkit-font-smoothing: antialiased;
+ 	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f360";
+	margin-left: 0.15em;
+	scale: 0.75;
+}*/
+
+
+/* Restore space after paragraphs in announcement widget */
+.ui-widget.app.announcements div.ui-article p { margin: 0 0 0.5em; }
+
+
+
+.hp-column-one-upper { padding-bottom: 0 }
+
+
+/* restore space after p in announcements (removed 1890918, cant remember why this was here to begin with) */
+	/*.ui-widget.app.announcements div.ui-article p { margin: 1em !important; }*/
+
+/* remove padding */
+	#module-content-8663 .ui-article,
+	#module-content-365 .ui-article,
+	
+
+
+	.flexpage p { padding: 0 !important; }
+
+	#module-content-365  .ui-articles > li { border: none }
+
+
+/***** removed since atlas update of borders between articles ******/
+/*.ui-widget.app.announcements .ui-article-description p:before {
+    content: "⟩ ";
+    color: #555;
+}*/
+
+.sliding-div:before {
+    content: "⮞ "
+}
+
+#rs-photo-gallery-container-8299 .rs-photo-gallery-desc-wrapper
+{ display: none; }
+
+/***************** Staff Directory CSS *****************/
+	#staff-directory .staff-info { color: #2c2c2d; padding-left: 5px;}
+	#staff-directory .staff-name { background-color: #ccc; padding-left: 5px; margin-bottom: 5px; }
+	#staff-directory .staff-pos { margin-bottom: 0; padding-bottom: 3px;}
+	#staff-directory .staff-dep { font-style: italic; margin-top: 0; padding-top: 0;}
+	#staff-directory .staff-web-stuff a { text-decoration: none; color: rgba(0,0,0,0.7); }
+	#staff-directory .staff-web-stuff a:hover { color: black; }
+	#staff-directory .staff-photo {
+		background:
+			#fff url('/cms/lib07/NJ01912793/Centricity/Domain/682/nophoto-f.png')
+			no-repeat right top;
+		width: 100px;
+		height: 133px;
+		float: right;
+		box-shadow: -1px 5px 5px #333;
+	}
+	@media (max-width: 639px) {
+	#staff-directory .staff-photo { display: none; }
+
+	#sw-content-minibasefilter4247 table td { display: block; }
+	}
+
+
+/********************* faculty web links ****************/
+	#staff-resources {
+		columns: 2 410px;		
+		text-align: center;
+	}
+
+	#staff-resources p {
+		margin-top: 0;
+	}
+
+	#staff-resources img {
+		box-shadow: 0 0 5px #888;
+		border: 0;
+		max-width: 100%;
+		height: auto;
+	}
+
+	#staff-resources img:hover { box-shadow: 0 0 8px #888; }
+
+
+/***************** rss icon fix *********************/
+	.icon-font-rss { background: none !important; }
+	.icon-font-rss:after {
+		content: "\e903" !important;
+		font-family: atlas;
+		margin-left: 3px !important;
+		font-size: 12px !important;
+	}
+	.icon-font-rss:before {content: none !important;}
+
+
+/**********************bpr changes ****************************/
+	.bpr-entry { border-bottom: 1px solid rgba(0,0,0,0.3); }
+	#sw-content-minibaselist4649 div div:nth-last-of-type(4) .bpr-entry { border-bottom: 0; }
+
+	a.bpr-link         { color:blue !important; }
+	a.bpr-link:visited { color: #551A8B !important; }
+
+	div#sw-content-minibaselist4649 table.bpr-entry
+	{
+		font-size: 1.08em;
+		line-height: 1.5em;
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	div#sw-content-minibaselist4649 table.bpr-entry:hover { background: #c0c0c0; }
+
+	div#sw-content-minibaselist4649 .sw-flex-item-group { padding: 0; }
+	div#sw-content-minibaselist4649 .sw-flex-item-group:first-child { padding-bottom: 10px; }
+	#sw-content-minibaselist4649 div div:nth-last-of-type(3) { padding-top: 10px; }
+	div#sw-content-minibaselist4649 table.bpr-entry tr td:first-child
+	{ 
+		width: 100px;
+
+	}
+
+	div#sw-content-minibaselist4649 table.bpr-entry tr td:nth-child(2)
+	{
+		width: 75px;
+
+	}
+
+/**********************************************************/
+/************** BEGIN red yellow blue alerts **************/
+/**********************************************************/
+
+	#module-content-4704 > div,
+	#module-content-4756 > div,
+	#module-content-4757 > div,
+	#module-content-8600 > div,
+	#module-content-8564 > div,
+	#module-content-11890 > div,
+	#module-content-4435 > div,
+	#module-content-13529 > div
+	{
+		padding: 0;
+	}
+
+	#module-content-4704 .ui-widget-detail,
+	#module-content-4756 .ui-widget-detail,
+	#module-content-4757 .ui-widget-detail,
+	#module-content-8600 .ui-widget-detail,
+	#module-content-8564 .ui-widget-detail,
+	#module-content-11890 .ui-widget-detail,
+	#module-content-4435 .ui-widget-detail,
+	#module-content-13529 .ui-widget-detail
+		{ padding: 0 !important; }
+
+	#module-content-4704 .ui-article,
+	#module-content-8600 .ui-article,
+	#module-content-8564 .ui-article,
+	#module-content-11890 .ui-article,
+	#module-content-4435 .ui-article,
+	.front-page-alert.red-alert {
+		background:
+			url('https://www.manvilleschools.org/cms/lib07/NJ01912793/Centricity/domain/4/icons/red-alert.png')
+			no-repeat scroll 5px center #f08a8a;
+		color: #683333;
+	}
+
+	#module-content-4756 .ui-article, .front-page-alert.yellow-alert {
+		background:
+			url('https://www.manvilleschools.org/cms/lib07/NJ01912793/Centricity/domain/4/icons/yellow-alert.png')
+			no-repeat scroll 5px center #ffff99;
+		color: #4A4A00;
+	}
+
+	#module-content-4757 .ui-article,
+	#module-content-13529 .ui-article,
+	.front-page-alert.blue-alert {
+		background:
+			url('https://www.manvilleschools.org/cms/lib07/NJ01912793/Centricity/domain/4/icons/info.png')
+			no-repeat scroll 5px center #e3e2f0;
+		color: #003471;
+	}
+
+	#module-content-4704 .ui-article, 
+	#module-content-4756 .ui-article,
+	#module-content-4757 .ui-article,
+	#module-content-8600 .ui-article,
+	#module-content-8564 .ui-article,
+	#module-content-11890 .ui-article,
+	#module-content-4435 .ui-article,
+	#module-content-13529 .ui-article,
+	.front-page-alert {
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		font: bold 14px arial,sans-serif;
+		padding: 5px 10px 5px 58px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		text-align: left;
+		height: 58px;
+		/*width: 100%;*/
+		max-width: 600px;
+
+		display: table;
+	}
+
+	#module-content-4704 .ui-article p,
+	#module-content-4756 .ui-article p,
+	#module-content-4757 .ui-article p,
+	#module-content-8600 .ui-article p,
+	#module-content-8564 .ui-article p,
+	#module-content-11890 .ui-article p,
+	#module-content-4435 .ui-article p,
+	#module-content-13529 .ui-article p,
+	.front-page-alert p {
+		margin-bottom: 0.5em !important;
+	}
+
+
+	#module-content-4704 .ui-articles > li,
+	#module-content-4756 .ui-articles > li,
+	#module-content-4757 .ui-articles > li,
+	#module-content-8600 .ui-articles > li,
+	#module-content-8564 .ui-articles > li,
+	#module-content-11890 .ui-articles > li,
+	#module-content-4435 .ui-articles > li,
+	#module-content-13529 .ui-article > li,
+	.front-page-alert p {
+		border: none !important;
+	}
+
+	#module-content-4704 .ui-article p:last-of-type,
+	#module-content-4756 .ui-article p:last-of-type,
+	#module-content-4757 .ui-article p:last-of-type,
+	#module-content-8600 .ui-article p:last-of-type,
+	#module-content-8564 .ui-article p:last-of-type,
+	#module-content-11890 .ui-article p:last-of-type,
+	#module-content-4435 .ui-article p:last-of-type,
+	#module-content-13529 .ui-article p:last-of-type,
+	.front-page-alert p:last-of-type {
+		margin-bottom: 0 !important;
+	}
+
+	#module-content-4704 .ui-article-description, 
+	#module-content-4756 .ui-article-description,
+	#module-content-4757 .ui-article-description,
+	#module-content-8600 .ui-article-description,
+	#module-content-8564 .ui-article-description,
+	#module-content-11890 .ui-article-description,
+	#module-content-4435 .ui-article-description,
+	#module-content-13529 .ui-article-description,
+	.front-page-alert div {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	#module-content-4704 .ui-article p:before, 
+	#module-content-4756 .ui-article p:before,
+	#module-content-4757 .ui-article p:before,
+	#module-content-8600 .ui-article p:before,
+	#module-content-8564 .ui-article p:before,
+	#module-content-11890 .ui-article p:before,
+	#module-content-4435 .ui-article p:before,
+	#module-content-13529 .ui-article p:before
+	{	content: none; }
+
+/********************************************************/
+/************** END red yellow blue alerts **************/
+/********************************************************/
+
+/*disable channel links (schoolwires borked this) */
+	/*li.sw-channel-item a:not(:only-child) { pointer-events: none; }*/
+
+
+/* focus fix */
+
+:focus {
+	outline: none !important;
+	transition: none !important;
+	animation: none !important;
+}
+
+/* wellness committee */
+
+#wellness-committee-members { column-count: 2; margin-top: 15px;}
+
+#wellness-committee-members p:first-child { margin: 0; }
+
+/* INSIGHT channel link */
+#navc-2067 a { color: #efd817 !important; }
+
+/* School Faculty Column Lists */
+
+div.school-faculty-columns p {
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
+}
+
+div.school-faculty-columns p:first-child {
+	margin-top: 0
+}
